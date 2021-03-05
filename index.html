@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="ml16" id="text">Patrick Carl Glinogo</h1>
+        <h4 class="text2">Created by</h4>
+        <img src="https://wallpapermemory.com/uploads/729/black-bullet-wallpaper-ultra-hd-4k-342401.jpg" style="width: 1110px;height: 500px;" alt="">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"> JQuery exercise</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Exercise</a>
+            </li>
+
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="jumbotron">
+                    <h1 class="display-4">JQueryExercises:</h1>
+                    <p>Modify your biography webpage and add the following functionalities:</p>
+                    <p> a. Add a JQuery function wherein if a mouse hovers up your picture, a paragraph describing you fades in.</p>
+                    <p> b. Add a functionality where people’s testimonials about you is seen if a picture is clicked and a double click would redirect you to the person’s social media (your preference.) </p>
+                    <p> c. Resize a following picture in the click of a button. The picture should slowly “animate” the resize process.
+                    </p>
+                    <hr class="my-4">
+                    <div class="row">
+
+                        <img src="https://www.wallpapertip.com/wmimgs/72-720988_10-new-anime-wallpaper-hd-full-hd-19201080.jpg" id="profile" style="width:30%;" alt="">
+                        <div id="profileContainer" style="display: none;">
+                            <p>First I wanna introduce myself, I am <strong> Patrick Carl Glinogo </strong>from the mountainous forest where you can find the <strong>cebu black shama.</strong> I had never expected that I would come this far, way back home
+                                I am just a simple boy doing things like some other boys doing on the remote areas like <strong> farming. </strong>Then suddenly <strong> Passerelles Numeriqeus </strong>came and brought me here to support my college and
+                                university needs. It has been an honor to be one of the fortunate scholars of PN and study at the
+                                <strong>        University of San Carlos </strong>.
+                            </p>
+
+                        </div>
+                        <img src="https://www.wallpapertip.com/wmimgs/72-720988_10-new-anime-wallpaper-hd-full-hd-19201080.jpg" id="friend" data-link="https://mail.google.com/mail/u/0/#inbox" style="width:30%;" alt="">
+                        <div id="testimonyContainer" style="display: none;">
+                            <p>First I wanna introduce myself, I am <strong> Patrick Carl Glinogo </strong>from the mountainous forest where you can find the <strong>cebu black shama.</strong> I had never expected that I would come this far, way back home
+                                I am just a simple boy doing things like some other boys doing on the remote areas like <strong> farming. </strong>Then suddenly <strong> Passerelles Numeriqeus </strong>came and brought me here to support my college and
+                                university needs. It has been an honor to be one of the fortunate scholars of PN and study at the
+                                <strong>        University of San Carlos </strong>.
+                            </p>
+                        </div>
+                        <img src="https://www.wallpapertip.com/wmimgs/72-720988_10-new-anime-wallpaper-hd-full-hd-19201080.jpg" id="picAnimate" data-link="https://mail.google.com/mail/u/0/#inbox" style="width:30%;" alt="">
+                        <div> <button class="btn btn-success" id="btnAnimate">animate</button></div>
+
+                    </div>
+
+                    <br><br><br><br>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="jumbotron">
+                    <h1 class="display-4">Exercises:</h1>
+                    <p>1.Create a function that accepts a number and its number system, then convert it into a specified number system.</p>
+                    <p>2.Create a function that accepts a date in DD/MM/YY format and identify the month of the said date. </p>
+                    <p>3.Create a function that accepts a date and will determine if the said date is a weekend.
+                    </p>
+                    <hr class="my-4">
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <div class="d-flex align-items-start">
+                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home1" role="tab" aria-controls="v-pills-home" aria-selected="true">Exercise#1</a>
+                                    <a class="nav-link " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile1" role="tab" aria-controls="v-pills-profile" aria-selected="false">Exercise#2</a>
+                                    <a class="nav-link " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile2" role="tab" aria-controls="v-pills-profile" aria-selected="false">Exercise#3</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-home1" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+                                    <div class="col-sm-4 border border-primary" style="padding:20px; margin-bottom:50px;border-radius: 20px; box-shadow: 5px 10px #888888;">
+                                        <div class=" mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">input number</label>
+                                            <input type="number " class="form-control" id="firstNum" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">to base</label>
+                                            <input type="number" class="form-control" id="toBase" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">result</label>
+                                            <input type="number" class="form-control" id="result" aria-describedby="emailHelp">
+                                        </div>
+                                        <button type="button" id="btn" class="btn btn-primary">convert</button>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile1" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+                                    <div class="col-sm-4 border border-primary" style="padding:20px; margin-bottom:50px;border-radius: 20px; box-shadow: 5px 10px #888888;">
+                                        <div class="mb-5">
+                                            <label for="exampleInputEmail1" class="form-label">input date</label>
+                                            <input type="text" class="form-control" id="date" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Month of </label>
+                                            <input type="text" class="form-control" id="monthOf" aria-describedby="emailHelp">
+                                        </div>
+                                        <button type="button" id="btnDate" class="btn btn-primary">display month</button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+
+                                    <div class="col-sm-4 border border-primary" style="padding:20px; margin-bottom:50px;border-radius: 20px; box-shadow: 5px 10px #888888;">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-labe">Input date</label>
+                                            <input type="text" class="form-control" id="dateInput" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Display Week </label>
+                                            <input type="text" class="form-control" id="week" aria-describedby="emailHelp">
+                                        </div>
+                                        <button type="button" id="btnWeek" class="btn btn-primary">display week</button>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="main.js ">
+            </script>
+
+            <body>
+
+</html>
+
+</html>
