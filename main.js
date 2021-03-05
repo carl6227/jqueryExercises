@@ -1,33 +1,45 @@
 $("#profile").hover(function() {
     $("#profileContainer").toggle();
-
-
 });
 
 $("#friend").click(function() {
     $("#testimonyContainer").toggle();
+
+
 });
 $("#friend").dblclick(function() {
     window.location.href = $(this).data("link");
 });
 
 $("#btnAnimate").click(function() {
-    $("#picAnimate").animate({
-        width: "20%",
-        height: "30%"
-
-
+    $("#btnAnimate").animate({
+        float: "right"
+    })
+    $("#btnAnimate").mouseout(function() {
+        $("#picAnimate").animate({
+            width: "60%",
+        }, 1000);
+        $("#picAnimate").css('box-shadow', '10px 20px 30px -10px #888');
     });
+    $("#picAnimate").animate({
+        borderTopLeftRadius: 300,
+        borderTopRightRadius: 300,
+        borderBottomLeftRadius: 300,
+        borderBottomRightRadius: 300,
+        heigth: "200px",
+        width: "200px",
+    }, 1000);
+
 });
 $("#btn").click(function() {
     $num = $('#firstNum').val();
     $base2 = $("#toBase").val();
     $("#result").val(parseInt($num, $base2))
 });
+
 $("#btnDate").click(function() {
     date = $("#date").val();
     ndx1 = date.indexOf("/")
-        // console.log(date.search("/12/"))
     month = parseInt(date.slice(ndx1 + 1, ndx1 + 3));
     switch (month) {
         case 1:
@@ -68,17 +80,26 @@ $("#btnDate").click(function() {
             break;
         default:
             $("#monthOf").val("NO CORRESPONDING MONTH")
-
     }
-
-
-
-
-
-
-
+});
+$("#cardContainer").hover(function() {
+    $("#cardContainer").animate({
+        width: "20rem",
+    }, 1000)
+    $("#cardContainer").css('box-shadow', '10px 20px 30px -10px #888');
 });
 
+$("#cardContainer").mouseout(function() {
+    $("#cardContainer").animate({
+        width: "18rem"
+    }, 1000)
+});
+
+// $("#cardContainer").mouseout(function() {
+//     $("#cardContainer").animate({
+//         width: "20rem"
+//     })
+// });
 // $("#btnWeek").click(function() {
 
 //     d = new Date();

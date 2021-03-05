@@ -12,19 +12,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
 </head>
 
 <body>
     <div class="container">
-        <h1 class="ml16" id="text">Patrick Carl Glinogo</h1>
-        <h4 class="text2">Created by</h4>
+        <h1 class="ml16" data-aos="fade-up-right" id="text">Patrick Carl Glinogo</h1>
+        <h4 class="text2" data-aos="fade-up-right">Created by</h4>
         <img src="https://wallpapermemory.com/uploads/729/black-bullet-wallpaper-ultra-hd-4k-342401.jpg" style="width: 1110px;height: 500px;" alt="">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"> JQuery exercise</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Exercise</a>
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Exercises</a>
             </li>
 
             </li>
@@ -33,34 +36,62 @@
 
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                 <div class="jumbotron">
-                    <h1 class="display-4">JQueryExercises:</h1>
+                    <h1 class="display-4">JQuery Exercises:</h1>
                     <p>Modify your biography webpage and add the following functionalities:</p>
                     <p> a. Add a JQuery function wherein if a mouse hovers up your picture, a paragraph describing you fades in.</p>
                     <p> b. Add a functionality where people’s testimonials about you is seen if a picture is clicked and a double click would redirect you to the person’s social media (your preference.) </p>
                     <p> c. Resize a following picture in the click of a button. The picture should slowly “animate” the resize process.
                     </p>
                     <hr class="my-4">
-                    <div class="row">
+                    <div>
 
-                        <img src="https://www.wallpapertip.com/wmimgs/72-720988_10-new-anime-wallpaper-hd-full-hd-19201080.jpg" id="profile" style="width:30%;" alt="">
-                        <div id="profileContainer" style="display: none;">
-                            <p>First I wanna introduce myself, I am <strong> Patrick Carl Glinogo </strong>from the mountainous forest where you can find the <strong>cebu black shama.</strong> I had never expected that I would come this far, way back home
-                                I am just a simple boy doing things like some other boys doing on the remote areas like <strong> farming. </strong>Then suddenly <strong> Passerelles Numeriqeus </strong>came and brought me here to support my college and
-                                university needs. It has been an honor to be one of the fortunate scholars of PN and study at the
-                                <strong>        University of San Carlos </strong>.
-                            </p>
+                        <div class="col-m-6" data-aos="fade-up" data-aos-anchor-placement="top-center" id="firstClass">
+                            <div class="row ">
+                                <div class="col-sm-4 ">
+                                    <img class="card-img-top" id="profile" src="IMG_20201220_080056.jpg" style="width: 80%;border-radius:10px;" alt="Card image cap">
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3>Text will appear here</h3>
+                                    <div id="profileContainer" style="display: none;">
+                                        <p>First I wanna introduce myself, I am <strong> Patrick Carl Glinogo </strong>from the mountainous forest where you can find the <strong>cebu black shama.</strong> I had never expected that I would come this far,
+                                            way back home I am just a simple boy doing things like some other boys doing on the remote areas like <strong> farming. </strong>Then suddenly <strong> Passerelles Numeriqeus </strong>came and brought me here
+                                            to support my college and university needs. It has been an honor to be one of the fortunate scholars of PN and study at the
+                                            <strong>        University of San Carlos </strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
-                        <img src="https://www.wallpapertip.com/wmimgs/72-720988_10-new-anime-wallpaper-hd-full-hd-19201080.jpg" id="friend" data-link="https://mail.google.com/mail/u/0/#inbox" style="width:30%;" alt="">
-                        <div id="testimonyContainer" style="display: none;">
-                            <p>First I wanna introduce myself, I am <strong> Patrick Carl Glinogo </strong>from the mountainous forest where you can find the <strong>cebu black shama.</strong> I had never expected that I would come this far, way back home
-                                I am just a simple boy doing things like some other boys doing on the remote areas like <strong> farming. </strong>Then suddenly <strong> Passerelles Numeriqeus </strong>came and brought me here to support my college and
-                                university needs. It has been an honor to be one of the fortunate scholars of PN and study at the
-                                <strong>        University of San Carlos </strong>.
-                            </p>
+                        <div class="container " data-aos="fade-down-right" style="border-radius: 20px;margin-left: 30px; margin-top:100px;">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card" id="cardContainer" style=" margin-left:50px; width:18rem;">
+                                        <img class="card-img-top" src="https://www.wallpapertip.com/wmimgs/72-720988_10-new-anime-wallpaper-hd-full-hd-19201080.jpg" id="friend" data-link="https://mail.google.com/mail/u/0/#inbox" style="width: 100%;">
+                                        <div class="card-body">
+                                            <center>
+                                                <h5 class="card-title">Testimony</h5>
+                                            </center>
+                                            <div id="testimonyContainer" style="display: none;">
+                                                <p>Ayaw Kool, bata pa ko kol
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <img src="https://www.wallpapertip.com/wmimgs/72-720988_10-new-anime-wallpaper-hd-full-hd-19201080.jpg" id="picAnimate" data-link="https://mail.google.com/mail/u/0/#inbox" style="width:60%;" alt="">
+                                    <div style="float:right;margin-right: 130px;"><button class="btn btn-success" id="btnAnimate">animate</button></div>
+
+                                </div>
+
+                            </div>
                         </div>
-                        <img src="https://www.wallpapertip.com/wmimgs/72-720988_10-new-anime-wallpaper-hd-full-hd-19201080.jpg" id="picAnimate" data-link="https://mail.google.com/mail/u/0/#inbox" style="width:30%;" alt="">
-                        <div> <button class="btn btn-success" id="btnAnimate">animate</button></div>
+
+
 
                     </div>
 
@@ -70,7 +101,7 @@
 
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="jumbotron">
-                    <h1 class="display-4">Exercises:</h1>
+                    <h1 class="display-4">exercises:</h1>
                     <p>1.Create a function that accepts a number and its number system, then convert it into a specified number system.</p>
                     <p>2.Create a function that accepts a date in DD/MM/YY format and identify the month of the said date. </p>
                     <p>3.Create a function that accepts a date and will determine if the said date is a weekend.
@@ -81,9 +112,9 @@
                         <div class="col-sm-4">
                             <div class="d-flex align-items-start">
                                 <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home1" role="tab" aria-controls="v-pills-home" aria-selected="true">Exercise#1</a>
-                                    <a class="nav-link " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile1" role="tab" aria-controls="v-pills-profile" aria-selected="false">Exercise#2</a>
-                                    <a class="nav-link " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile2" role="tab" aria-controls="v-pills-profile" aria-selected="false">Exercise#3</a>
+                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home1" role="tab" aria-controls="v-pills-home" aria-selected="true">Converter</a>
+                                    <a class="nav-link " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile1" role="tab" aria-controls="v-pills-profile" aria-selected="false">Display month</a>
+                                    <a class="nav-link " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile2" role="tab" aria-controls="v-pills-profile" aria-selected="false">Display week</a>
 
                                 </div>
                             </div>
@@ -147,7 +178,9 @@
                 </div>
             </div>
 
-
+            <script>
+                AOS.init();
+            </script>
             <script src="main.js ">
             </script>
 
