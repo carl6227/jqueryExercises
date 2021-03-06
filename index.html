@@ -8,7 +8,8 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -19,179 +20,174 @@
 
 <body>
     <div class="container">
-        <div class="col-sm-12" style="background-color: #DCD9D4;
-        background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
-        background-blend-mode: soft-light,screen;">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"> JQuery exercise</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Exercises</a>
-                </li>
-            </ul>
-        </div>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="col-m " style="margin-top: 50px;">
-                    <div class="col-sm-10" data-aos="fade-up" data-aos-anchor-placement="top-center" id="firstClass">
-                        <div class="row ">
-                            <div class="col-sm-6 ">
-                                <center>
-                                    <img class="card-img-top" id="profile" src="http://unblast.com/wp-content/uploads/2020/05/Writing-CV-Illustration.jpg" alt="Card image cap">
-                                </center>
-                            </div>
-                            <div class="col-sm-6">
-                                <h1 id="h1">𝐎𝐧 𝐌𝐨𝐮𝐬𝐞𝐎𝐯𝐞𝐫</h1>
-                                <h2 id="h2">𝐭𝐞𝐱𝐭 𝐰𝐢𝐥𝐥</h2>
-                                <h3 id="h3">𝐚𝐩𝐩𝐞𝐚𝐫</h3>
-                                <br><br><br><br><br><br><br>
-                                <div id="profileContainer" style="display: none;">
-                                    <p>First I wanna introduce myself, I am <strong> Patrick Carl Glinogo </strong>from the mountainous forest where you can find the <strong>cebu black shama.</strong> I had never expected that I would come this far, way
-                                        back home I am just a simple boy doing things like some other boys doing on the remote areas like <strong> farming. </strong>Then suddenly <strong> Passerelles Numeriqeus </strong>came and brought me here to support
-                                        my college and university needs. It has been an honor to be one of the fortunate scholars of PN and study at the
-                                        <strong>        University of San Carlos </strong>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+        <div class="col-sm">
+            <div class="alert alert-success" style="display: none;" id="alert">
+                Thank you for Subscribing!
+            </div>
 
-                    </div>
-                    <div class="container " data-aos="fade-down-right" style="border-radius: 20px;margin-left: 30px;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1 class="intro">𝐖𝐞𝐛𝐬𝐢𝐭𝐞 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭</h1>
+                    <h2 class="intro1">𝐉𝐐𝐮𝐞𝐫𝐲 𝐄𝐱𝐞𝐫𝐜𝐢𝐬𝐞𝐬</h2>
+                    <h5 style="margin-top: 30px;margin-left:170px">Patrick Carl Glinogo</h5>
+                    <p style="margin-left:170px"> created by </p>
+                    <button class="btn btn-danger" id="introBtn">subscribe</button>
+                </div>
+                <div class="col-sm-6"><img class="introImg" src="https://dreamguystech.com/wp-content/themes/dreamguys/assets/images/web-app-development-bg-banner.png" alt=""></div>
+            </div>
+            <div class="col-sm-12" id="nav">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"> JQuery exercise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Exercises</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="col-m " style="margin-top: 50px;">
                         <div class="col-sm-10" data-aos="fade-up" data-aos-anchor-placement="top-center" id="firstClass">
                             <div class="row ">
                                 <div class="col-sm-6 ">
-                                    <h1 class="text">𝐂𝐥𝐢𝐜𝐤 𝐢𝐦𝐚𝐠𝐞</h1>
-                                    <h2 class="text">𝐭𝐨 𝐯𝐞𝐢𝐰 </h2>
-                                    <h3 class="text">𝐭𝐞𝐬𝐭𝐢𝐦𝐨𝐧𝐲 </h3>
-                                    <br><br>
-
-                                    <div id="testimonyContainer" style="display: none;">
-                                        <p>Ayaw Kool, bata pa ko kol
+                                    <center>
+                                        <img class="card-img-top" id="profile" src="http://unblast.com/wp-content/uploads/2020/05/Writing-CV-Illustration.jpg" alt="Card image cap">
+                                    </center>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h1 id="h1">𝐇𝐨𝐯𝐞𝐫 𝐢𝐦𝐚𝐠𝐞</h1>
+                                    <h2 id="h2">𝐭𝐨 𝐯𝐢𝐞𝐰</h2>
+                                    <h3 id="h3">𝐁𝐢𝐨𝐠𝐫𝐚𝐩𝐡𝐲</h3>
+                                    <br><br><br><br><br><br><br>
+                                    <div id="profileContainer" style="display: none;">
+                                        <p>First I wanna introduce myself, I am <strong> Patrick Carl Glinogo </strong>from the mountainous forest where you can find the <strong>cebu black shama.</strong> I had never expected that I would come this far,
+                                            way back home I am just a simple boy doing things like some other boys doing on the remote areas like <strong> farming. </strong>Then suddenly <strong> Passerelles Numeriqeus </strong>came and brought me here
+                                            to support my college and university needs. It has been an honor to be one of the fortunate scholars of PN and study at the
+                                            <strong>        University of San Carlos </strong>.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-sm-6" style="margin-top:-50px">
-                                    <img class="card-img-top" id="friend" src="https://img.freepik.com/free-vector/personal-memories-concept_23-2148403720.jpg?size=338&ext=jpg" alt="Card image cap">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container " style="border-radius: 20px;margin-left: 30px;">
+                            <div class="col-sm-10" id="firstClass">
+                                <div class="row ">
+                                    <div class="col-sm-6 " data-aos="fade-right">
+                                        <h1 class="text">𝐂𝐥𝐢𝐜𝐤 𝐢𝐦𝐚𝐠𝐞</h1>
+                                        <h2 class="text">𝐭𝐨 𝐯𝐢𝐞𝐰 </h2>
+                                        <h3 class="text">𝐭𝐞𝐬𝐭𝐢𝐦𝐨𝐧𝐲 </h3>
+                                        <br><br>
+                                        <div id="testimonyContainer" style="display: none;">
+                                            <h5 style="text-indent: 20px;">" Patrick Carl is kind and humble person. He is very friendly too.He is wiling to help others and like him for that. Not to mention that he is very confident and jolly person. "
+                                            </h5>
+                                            <p style="margin-left: 150px; margin-top:20px">Rubylyn Hernani</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6" style="margin-top:-50px">
+                                        <img data-aos="fade-left" class="card-img-top" id="friend" src="https://thumbs.dreamstime.com/b/mobile-collaboration-concept-vector-illustration-businessmen-handshaking-smartphone-collaborative-tools-teamwork-132112088.jpg" data-link="https://www.linkedin.com/in/ruby-hernani-282a0b1a1/"
+                                            alt="Card image cap">
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
-
+                        <hr>
                         <div class="col-sm-12">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img src="https://www.wallpapertip.com/wmimgs/72-720988_10-new-anime-wallpaper-hd-full-hd-19201080.jpg" class="picAnimate" data-link="https://mail.google.com/mail/u/0/#inbox" style="width:100%;" alt="">
+                                    <img data-aos="fade-right" src="https://image.freepik.com/free-vector/ambitious-businessman-top-business-growth-leadership-quality-career-opportunity-success-achievement-aspirations-realization-idea_335657-410.jpg" class="picAnimate" data-link="https://mail.google.com/mail/u/0/#inbox"
+                                        id="animateImg" alt="">
                                 </div>
-                                <div class="col-sm-4">
-                                    <img src="https://www.wallpapertip.com/wmimgs/72-720988_10-new-anime-wallpaper-hd-full-hd-19201080.jpg" class="picAnimate" data-link="https://mail.google.com/mail/u/0/#inbox" style="width:100%;" alt="">
+                                <div class="col-sm-6" data-aos="fade-left">
+                                    <h1 class="text2"> 𝐂𝐥𝐢𝐜𝐤 𝐛𝐮𝐭𝐭𝐨𝐧</h1><br><br>
+                                    <h2 class="text2">𝐭𝐨 𝐚𝐧𝐢𝐦𝐚𝐭𝐞</h2><br><br>
+                                    <h3 class="text2"> 𝐢𝐦𝐚𝐠𝐞</h2>
+                                        <button class="btn btn-warning" id="btnAnimate">animate</button>
                                 </div>
-                                <div class="col-sm-4">
-                                    <img src="https://www.wallpapertip.com/wmimgs/72-720988_10-new-anime-wallpaper-hd-full-hd-19201080.jpg" class="picAnimate" data-link="https://mail.google.com/mail/u/0/#inbox" style="width:100%;" alt="">
-                                </div>
-
                             </div>
-                            <div style="float:right;margin-right: 130px;"><button class="btn btn-success" id="btnAnimate">animate</button></div>
-
                         </div>
-
-
                     </div>
-
-
-
                 </div>
 
-                <br><br><br><br>
-            </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="jumbotron">
 
+                        <div class="row">
 
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="jumbotron">
-                    <h1 class="display-4">exercises:</h1>
-                    <p>1.Create a function that accepts a number and its number system, then convert it into a specified number system.</p>
-                    <p>2.Create a function that accepts a date in DD/MM/YY format and identify the month of the said date. </p>
-                    <p>3.Create a function that accepts a date and will determine if the said date is a weekend.
-                    </p>
-                    <hr class="my-4">
-                    <div class="row">
-
-                        <div class="col-sm-4">
-                            <div class="d-flex align-items-start">
-                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home1" role="tab" aria-controls="v-pills-home" aria-selected="true">Converter</a>
-                                    <a class="nav-link " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile1" role="tab" aria-controls="v-pills-profile" aria-selected="false">Display month</a>
-                                    <a class="nav-link " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile2" role="tab" aria-controls="v-pills-profile" aria-selected="false">Display week</a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-home1" role="tabpanel" aria-labelledby="v-pills-home-tab">
-
-                                    <div class="col-sm-4 border border-primary" style="padding:20px; margin-bottom:50px;border-radius: 20px; box-shadow: 5px 10px #888888;">
-                                        <div class=" mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">input number</label>
-                                            <input type="number " class="form-control" id="firstNum" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">to base</label>
-                                            <input type="number" class="form-control" id="toBase" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">result</label>
-                                            <input type="number" class="form-control" id="result" aria-describedby="emailHelp">
-                                        </div>
-                                        <button type="button" id="btn" class="btn btn-primary">convert</button>
-                                    </div>
-
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-profile1" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-
-                                    <div class="col-sm-4 border border-primary" style="padding:20px; margin-bottom:50px;border-radius: 20px; box-shadow: 5px 10px #888888;">
-                                        <div class="mb-5">
-                                            <label for="exampleInputEmail1" class="form-label">input date</label>
-                                            <input type="text" class="form-control" id="date" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Month of </label>
-                                            <input type="text" class="form-control" id="monthOf" aria-describedby="emailHelp">
-                                        </div>
-                                        <button type="button" id="btnDate" class="btn btn-primary">display month</button>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-profile2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-
-
-                                    <div class="col-sm-4 border border-primary" style="padding:20px; margin-bottom:50px;border-radius: 20px; box-shadow: 5px 10px #888888;">
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-labe">Input date</label>
-                                            <input type="text" class="form-control" id="dateInput" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Display Week </label>
-                                            <input type="text" class="form-control" id="week" aria-describedby="emailHelp">
-                                        </div>
-                                        <button type="button" id="btnWeek" class="btn btn-primary">display week</button>
-
+                            <div class="col-sm-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home1" role="tab" aria-controls="v-pills-home" aria-selected="true">Converter</a>
+                                        <a class="nav-link " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile1" role="tab" aria-controls="v-pills-profile" aria-selected="false">Display month</a>
+                                        <a class="nav-link " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile2" role="tab" aria-controls="v-pills-profile" aria-selected="false">Display week</a>
 
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-sm-8">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home1" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <div class="col-sm-4 border border-primary" style="padding:20px; margin-bottom:50px;border-radius: 20px; box-shadow: 5px 10px #888888;">
+                                            <div class=" mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">input number</label>
+                                                <input type="number " class="form-control" id="firstNum" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">to base</label>
+                                                <input type="number" class="form-control" id="toBase" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">result</label>
+                                                <input type="number" class="form-control" id="result" aria-describedby="emailHelp">
+                                            </div>
+                                            <button type="button" id="btn" class="btn btn-primary">convert</button>
+                                        </div>
 
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-profile1" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+                                        <div class="col-sm-4 border border-primary" style="padding:20px; margin-bottom:50px;border-radius: 20px; box-shadow: 5px 10px #888888;">
+                                            <div class="mb-5">
+                                                <label for="exampleInputEmail1" class="form-label">input date</label>
+                                                <input type="text" class="form-control" id="date" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Month of </label>
+                                                <input type="text" class="form-control" id="monthOf" aria-describedby="emailHelp">
+                                            </div>
+                                            <button type="button" id="btnDate" class="btn btn-primary">display month</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-profile2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                        <div class="col-sm-4 border border-primary" style="padding:20px; margin-bottom:50px;border-radius: 20px; box-shadow: 5px 10px #888888;">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-labe">Input date</label>
+                                                <input type="text" class="form-control" id="dateInput" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Display Week </label>
+                                                <input type="text" class="form-control" id="week" aria-describedby="emailHelp">
+                                            </div>
+                                            <button type="button" id="btnWeek" class="btn btn-primary">display week</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <script>
-                AOS.init();
-            </script>
-            <script src="main.js ">
-            </script>
 
-            <body>
+
+        <script src="main.js ">
+            AOS.init();
+        </script>
+
+        <body>
 
 </html>
 

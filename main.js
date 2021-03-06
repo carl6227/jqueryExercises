@@ -1,39 +1,58 @@
+$("#introBtn").click(function() {
+    $('#alert').toggle()
+});
+
+
 $("#profile").hover(function() {
     $("#profileContainer").toggle();
+    $(this).animate({
+        width: "100%"
+    }).css('box-shadow', '10px 20px 30px -10px #888');
+});
+$("#profile").mouseout(function() {
+    $(this).animate({
+        width: "80%"
+    });
 });
 
 $("#friend").click(function() {
     $("#testimonyContainer").toggle();
 
-
 });
 $("#friend").dblclick(function() {
     window.location.href = $(this).data("link");
 });
-
+$("#friend").hover(function() {
+    $(this).animate({
+        width: "100%"
+    }).css('box-shadow', '10px 20px 30px -10px #888');
+});
+$("#friend").mouseout(function() {
+    $(this).animate({
+        width: "80%"
+    });
+});
 $("#btnAnimate").click(function() {
     $("#picAnimate").css('box-shadow', '10px 20px 30px -10px #888');
     $(".picAnimate").animate({
-        borderTopLeftRadius: 300,
-        borderTopRightRadius: 300,
-        borderBottomLeftRadius: 300,
-        borderBottomRightRadius: 300,
-        heigth: "200px",
-        width: "200px",
-    }, 1000);
+        width: "70%"
+    }, 1000).css('box-shadow', '10px 20px 30px -10px #888');
 
 });
 $("#btnAnimate").mouseout(function() {
     $(".picAnimate").animate({
-        width: "60%",
+        width: "100%",
     }, 1000);
 });
+
+// conversion jquery
 $("#btn").click(function() {
     $num = $('#firstNum').val();
     $base2 = $("#toBase").val();
     $("#result").val(parseInt($num, $base2))
 });
 
+// display month 
 $("#btnDate").click(function() {
     date = $("#date").val();
     ndx1 = date.indexOf("/")
@@ -80,22 +99,11 @@ $("#btnDate").click(function() {
     }
 });
 
-
+// display week
 $("#btnWeek").click(function() {
     dateInput = new Date($("#dateInput").val());
     $("#week").val("Weekdays")
     if ((dateInput.getDay() == 6) || (dateInput.getDay() == 0)) {
         $("#week").val("Weekend")
     }
-
-
 })
-
-// $("#btnWeek").click(function() {
-
-//     d = new Date();
-//     strDate = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
-//     d.setFullYear(2018)
-//     d.setMonth(2)
-//     console.log(d.getFullYear() + "" + )
-// });
