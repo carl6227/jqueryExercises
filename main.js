@@ -12,16 +12,8 @@ $("#friend").dblclick(function() {
 });
 
 $("#btnAnimate").click(function() {
-    $("#btnAnimate").animate({
-        float: "right"
-    })
-    $("#btnAnimate").mouseout(function() {
-        $("#picAnimate").animate({
-            width: "60%",
-        }, 1000);
-        $("#picAnimate").css('box-shadow', '10px 20px 30px -10px #888');
-    });
-    $("#picAnimate").animate({
+    $("#picAnimate").css('box-shadow', '10px 20px 30px -10px #888');
+    $(".picAnimate").animate({
         borderTopLeftRadius: 300,
         borderTopRightRadius: 300,
         borderBottomLeftRadius: 300,
@@ -30,6 +22,11 @@ $("#btnAnimate").click(function() {
         width: "200px",
     }, 1000);
 
+});
+$("#btnAnimate").mouseout(function() {
+    $(".picAnimate").animate({
+        width: "60%",
+    }, 1000);
 });
 $("#btn").click(function() {
     $num = $('#firstNum').val();
@@ -82,24 +79,18 @@ $("#btnDate").click(function() {
             $("#monthOf").val("NO CORRESPONDING MONTH")
     }
 });
-$("#cardContainer").hover(function() {
-    $("#cardContainer").animate({
-        width: "20rem",
-    }, 1000)
-    $("#cardContainer").css('box-shadow', '10px 20px 30px -10px #888');
-});
 
-$("#cardContainer").mouseout(function() {
-    $("#cardContainer").animate({
-        width: "18rem"
-    }, 1000)
-});
 
-// $("#cardContainer").mouseout(function() {
-//     $("#cardContainer").animate({
-//         width: "20rem"
-//     })
-// });
+$("#btnWeek").click(function() {
+    dateInput = new Date($("#dateInput").val());
+    $("#week").val("Weekdays")
+    if ((dateInput.getDay() == 6) || (dateInput.getDay() == 0)) {
+        $("#week").val("Weekend")
+    }
+
+
+})
+
 // $("#btnWeek").click(function() {
 
 //     d = new Date();
